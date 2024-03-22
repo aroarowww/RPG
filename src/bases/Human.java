@@ -3,8 +3,8 @@ package bases;
 import utils.Dice;
 
 public abstract class Human extends Living{
-	protected String name;
-	protected String weapon;
+	//protected String name;
+	//protected String weapon;
 	// コンストラクタ
 	public Human(String name, String weapon) {
 		super(name, weapon);
@@ -23,7 +23,7 @@ public abstract class Human extends Living{
 		}
 //	  3-5. コンソールに、以下のようにステータス文字列（〇〇は人間の名前、✕✕は人間の武器の名前、△△はtargetの名前、▲▲はダメージ値）を表示します
 //	　　　　「〇〇」が「✕✕」で攻撃！「△△」に▲▲のダメージを与えた。しかし自分の攻撃力も1減少した。
-		System.out.println(this.name + this.weapon + "で攻撃！" + target.getName() + "に" + damage + "のダメージを与えた。");
+		System.out.println("「" + this.name + "」" + "が" + "「" + this.weapon + "」" + "で攻撃！" + "「" + target.getName()+ "」" + "に" + damage + "のダメージを与えた。");
 		System.out.println("しかし自分の攻撃力も1減少した。");
 	}
 }
